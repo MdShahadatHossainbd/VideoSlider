@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Slider Using CSS and Vanilla JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <section>
+      <video  id="slider" autoplay muted loop>
+        <source src="./res/৪টি কাজ শেষ না করে রাতে ঘুমাবে না - Shaikh Tamim Al Adnani.mp4" type="video/mp4">
+      </video>
+      <ul class="navigation">
+        <li onclick="videoUrl('./res/৪টি কাজ শেষ না করে রাতে ঘুমাবে না - Shaikh Tamim Al Adnani.mp4')"><img src="./res/thumb1.png" alt=""></li>
+        <li onclick="videoUrl('./res/Daily Naseehah - আত্মীয়তার সম্পর্ক রক্ষা করুন - Shaikh Tamim Al Adnani.mp4')"><img src="./res/thumb2.png" alt=""></li>
+        <li onclick="videoUrl('./res/Daily Naseehah - ক্ষমা করতে শিখুন - Shaikh Tamim Al Adnani.mp4')"><img src="./res/thumb3.png" alt=""></li>
+        <li onclick="videoUrl('./res/Daily Naseehah - পরষ্পরের কল্যাণকামী হোন - Shaikh Tamim Al Adnani.mp4')"><img src="./res/thumb4.png" alt=""></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function videoUrl(hmmmm){
+        document.getElementById("slider").src = hmmmm;
+      }
+
+    </script>
+  </body>
+</html>
